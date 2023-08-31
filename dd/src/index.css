@@ -37,6 +37,7 @@
 }
 
 body {
+  @apply max-w-screen-xl mx-auto;
   font-family: 'Pretendard', sans-serif;
 }
 
