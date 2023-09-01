@@ -1,5 +1,7 @@
 import React from 'react';
 import { Table } from '../util/types';
+import { AiOutlineCloseCircle } from 'react-icons/ai';
+import TitleBtn from './minicomponents/TitleBtn';
 
 type Props = {
   selectedTable: Table | null;
@@ -19,30 +21,39 @@ const SelectedTableInfo: React.FC<Props> = ({
   }
 
   return (
-    <div className="flex flex-col gap-2 text-white">
+    <div className="flex flex-col text-white">
       {selectedTable ? (
         <>
-          <h2 className="text-[27px] semibolder">
+          <h2 className="text-[27px] semibolder mb-3">
             {selectedTable.table_number}번 테이블
           </h2>
-          <div className="w-full h-[2px] bg-Gray05" />
-          <div className="grid grid-cols-4 gap-2 px-4 ">
+          {/* <div className="w-full h-[2px] bg-Gray05" /> */}
+          <div className="flex flex-col gap-3 p-4 h-[350px] bg-Gray02 overflow-y-scroll rounded-md border-2 border-Gray05 mb-4">
             {selectedTable.orders.map((order, index) => (
-              <React.Fragment key={index}>
-                <span className=" text-left">{order.dish}</span>
-                <span className=" text-center">X {order.quantity}</span>
+              <div
+                className="flex justify-between items-center text-xl"
+                key={index}
+              >
+                <span className="text-left">{order.dish}</span>
+                <span className="text-center">x {order.quantity}</span>
                 <span className=" text-right">{order.price}원</span>
-                <button
+                <span
+                  className="cursor-pointer text-Gray04 text-right"
                   onClick={() =>
                     onRemoveOrder(selectedTable.table_number, order.dish)
                   }
                 >
-                  X
-                </button>
-              </React.Fragment>
+                  <AiOutlineCloseCircle size={22} />
+                </span>
+              </div>
             ))}
-            <span>TOTAL</span>
-            <span className="col-span-2 text-right">{totalPrice}원</span>
+          </div>
+          <h2 className="text-right text-[28px] semibolder mb-4">
+            총 {totalPrice}원
+          </h2>
+          <div className="flex flex-col gap-4">
+            <TitleBtn title="주문추가" />
+            <TitleBtn title="결제확인" />
           </div>
         </>
       ) : (

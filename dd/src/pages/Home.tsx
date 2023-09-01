@@ -39,7 +39,7 @@ function Home() {
             />
           ))}
         </div>
-        <div className="w-[30%] bg-Gray01 px-5 py-10 rounded-md">
+        <div className="w-[30%] bg-Gray01 px-5 py-5 rounded-md">
           <SelectedTableInfo
             onRemoveOrder={handleRemove}
             selectedTable={selectedTable}
