@@ -25,7 +25,7 @@ function Header() {
           }}
           className={`
           ${selectedTab === tab.name ? 'text-active' : 'text-inActive'}
-          w-[140px] text-[30px] bolder transition-colors ${dur200}`}
+          w-[140px] text-[30px] bolder transition-colors ${dur200} text-left`}
         >
           {tab.name}
         </button>
