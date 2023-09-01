@@ -15,6 +15,7 @@ function Header() {
     <div className="flex items-center gap-2 mt-20 mb-[40px]">
       {tabs.map((tab) => (
         <button
+          key={tab}
           onClick={() => setSelectedTab(tab)}
           className={`
           ${selectedTab === tab ? 'text-active' : 'text-inActive'}

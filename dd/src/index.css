@@ -55,3 +55,18 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+/* For Webkit browsers */
+::-webkit-scrollbar {
+  width: 8px; /* for vertical scrollbars */
+  height: 4px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

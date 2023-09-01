@@ -27,3 +27,16 @@ export type Menu = {
 };
 
 // 사용 예
+
+export type Order = {
+  dish: string;
+  quantity: number;
+  price: number;
+};
+
+export type Table = {
+  table_number: number;
+  orders: Order[];
+};
+
+export type Tables = Table[];
