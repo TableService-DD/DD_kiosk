@@ -11,6 +11,7 @@ export default {
         Gray05: '#D4D4D4', // 오타 수정 (Gary05 -> Gray05)
         Gray06: '#E9E9E9',
         Gray07: '#F4F4F4',
+        Gray08: '#F2F2F2',
         inActive: '#818181',
         Active: '#000000',
         primary: '#FF6A00',

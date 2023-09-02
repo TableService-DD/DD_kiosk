@@ -4,27 +4,22 @@ import TableCard from '../components/TableCard';
 import { Table, Tables } from '../util/types';
 import SelectedTableInfo from '../components/SelectedTableInfo';
 import { handleDetailClick, handleRemoveOrder } from '../util/tableUtils';
+import { useFetchTables } from '../hooks/useFetchTables';
 
 function Home() {
-  const [tables, setTables] = useState<Tables>([]);
   const [selectedTable, setSelectedTable] = useState<Table | null>(null);
-  useEffect(() => {
-    axios
-      .get<Tables>('/data/tables.json')
-      .then((response) => {
-        const tables: Tables = response.data;
-        setTables(tables);
-      })
-      .catch((error) => {
-        console.error('There was an error fetching data:', error);
-      });
-  }, []);
+  const { tables, setTables, error } = useFetchTables();
+
   const handleDetail = (table: Table) => {
     handleDetailClick(setSelectedTable, table);
   };
   const handleRemove = (tableNumber: number, dish: string) => {
     handleRemoveOrder(setTables, setSelectedTable, tables, tableNumber, dish);
   };
+
+  if (error) {
+    return <div>Error loading data</div>;
+  }
 
   return (
     <section>

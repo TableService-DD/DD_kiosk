@@ -27,7 +27,6 @@ const SelectedTableInfo: React.FC<Props> = ({
           <h2 className="text-[27px] semibolder mb-3">
             {selectedTable.table_number}번 테이블
           </h2>
-          {/* <div className="w-full h-[2px] bg-Gray05" /> */}
           <div className="flex flex-col gap-3 p-4 h-[350px] bg-Gray02 overflow-y-scroll rounded-md border-2 border-Gray05 mb-4">
             {selectedTable.orders.map((order, index) => (
               <div
