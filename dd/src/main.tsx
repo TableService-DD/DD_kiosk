@@ -5,6 +5,7 @@ import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/Home.tsx';
 import ListPage from './pages/ListPage.tsx';
+import ListStatus from './pages/ListStatus.tsx';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: 'order-list',
         element: <ListPage />,
+      },
+      {
+        path: 'order-status',
+        element: <ListStatus />,
       },
     ],
   },

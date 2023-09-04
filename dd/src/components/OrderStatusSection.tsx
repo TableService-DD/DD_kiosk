@@ -1,7 +1,7 @@
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { useFetchTables } from '../hooks/useFetchTables';
 
-function OrderListSection() {
+function OrderStatusSection() {
   const { tables, setTables, error } = useFetchTables();
 
   if (error) {
@@ -52,9 +52,6 @@ function OrderListSection() {
               ))}
             </div>
             <div className="flex flex-col gap-6 py-2 justify-center">
-              <button className="p-2 px-8 rounded-lg text-xl bg-Gray07 ">
-                주문대기
-              </button>
               <button className="p-2 px-8 rounded-lg text-xl text-white bg-Red02">
                 주문취소
               </button>
@@ -66,4 +63,4 @@ function OrderListSection() {
   );
 }
 
-export default OrderListSection;
+export default OrderStatusSection;
