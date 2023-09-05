@@ -16,13 +16,14 @@ function Header() {
 
   const [selectedTab, setSelectedTab] = useState<string>('');
 
-  // On component mount or URL change, update the selected tab
   useEffect(() => {
     const matchingTab = tabs.find((tab) => tab.link === location.pathname);
     if (matchingTab) {
       setSelectedTab(matchingTab.name);
     }
   }, [location.pathname]);
+
+  const isSalesPage = location.pathname.includes('/sales');
 
   return (
     <div className="flex items-center gap-2 mt-20 mb-[40px]">
@@ -34,7 +35,13 @@ function Header() {
             navigate(tab.link);
           }}
           className={`
-          ${selectedTab === tab.name ? 'text-active' : 'text-inActive'}
+          ${
+            selectedTab === tab.name
+              ? isSalesPage
+                ? 'text-white'
+                : 'text-active'
+              : 'text-inActive'
+          }
           w-[140px] text-[30px] bolder transition-colors ${dur200} text-left`}
         >
           {tab.name}

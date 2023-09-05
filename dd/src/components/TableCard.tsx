@@ -14,8 +14,8 @@ function TableCard({ table, onDetailClick, isSelected }: Props) {
   return (
     <div
       className={`${
-        isSelected ? 'border-primary border-4' : ''
-      } bg-Gray01 text-white rounded-md w-[160px] h-[160px] flex flex-col overflow-hidden relative group hover:bg-Gray02 transition ${dur300}`}
+        isSelected ? 'border-primary' : 'border-transparent'
+      } bg-Gray01 border-4 text-white rounded-md w-[160px] h-[160px] flex flex-col overflow-hidden relative group hover:bg-Gray02 transition ${dur300}`}
     >
       <h1 className="w-full bg-Gray02 py-1 text-center text-white text-[17px] bolder mb-1">
         테이블 {table.table_number}

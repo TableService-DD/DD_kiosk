@@ -6,6 +6,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/Home.tsx';
 import ListPage from './pages/ListPage.tsx';
 import ListStatus from './pages/ListStatus.tsx';
+import ServeStatus from './pages/ServeStatus.tsx';
+import ServeDone from './pages/ServeDone.tsx';
+import Sales from './pages/Sales.tsx';
 
 const router = createBrowserRouter([
   {
@@ -24,7 +27,19 @@ const router = createBrowserRouter([
         path: 'order-status',
         element: <ListStatus />,
       },
+      {
+        path: 'serving-waiting',
+        element: <ServeStatus />,
+      },
+      {
+        path: 'serving-done',
+        element: <ServeDone />,
+      },
     ],
+  },
+  {
+    path: '/sales',
+    element: <Sales />,
   },
 ]);
 

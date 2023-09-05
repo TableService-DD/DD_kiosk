@@ -27,7 +27,10 @@ function OrderListSection() {
   return (
     <section className="flex flex-col gap-4">
       {tables.map((table) => (
-        <div key={table.table_number} className="shadow-lg rounded-xl  p-5">
+        <div
+          key={table.table_number}
+          className="shadow-lg rounded-xl p-5 border-t-[3px]"
+        >
           <div className="flex justify-between">
             <div>
               <h2 className="text-2xl semibolder mb-3">

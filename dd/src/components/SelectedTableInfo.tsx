@@ -30,12 +30,12 @@ const SelectedTableInfo: React.FC<Props> = ({
           <div className="flex flex-col gap-3 p-4 h-[350px] bg-Gray02 overflow-y-scroll rounded-md border-2 border-Gray05 mb-4">
             {selectedTable.orders.map((order, index) => (
               <div
-                className="flex justify-between items-center text-xl"
+                className="grid grid-cols-[3fr,1fr,3fr,1fr] gap-4 items-center text-xl"
                 key={index}
               >
                 <span className="text-left">{order.dish}</span>
                 <span className="text-center">x {order.quantity}</span>
-                <span className=" text-right">{order.price}원</span>
+                <span className="text-right">{order.price}원</span>
                 <span
                   className="cursor-pointer text-Gray04 text-right"
                   onClick={() =>
@@ -47,6 +47,7 @@ const SelectedTableInfo: React.FC<Props> = ({
               </div>
             ))}
           </div>
+
           <h2 className="text-right text-[28px] semibolder mb-4">
             총 {totalPrice}원
           </h2>

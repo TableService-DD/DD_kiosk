@@ -24,7 +24,7 @@ function Home() {
   return (
     <section>
       <div className="flex justify-between gap-1">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 w-[70%] h-[80vh] overflow-scroll bg-Gray05 rounded-md p-3">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 w-[70%] h-[80vh] overflow-scroll bg-Gray05 rounded-md p-3">
           {tables.map((table, index) => (
             <TableCard
               key={index}
