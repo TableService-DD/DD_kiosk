@@ -70,3 +70,8 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: 50%; /* 원하는 위치에 따라 값을 조정하세요. */
+}
