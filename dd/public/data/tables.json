@@ -1,0 +1,312 @@
+[
+  {
+    "table_number": 1,
+    "orders": [
+      {
+        "dish": "라면",
+        "quantity": 1,
+        "price": 6000
+      },
+      {
+        "dish": "소주",
+        "quantity": 1,
+        "price": 7000
+      }
+    ]
+  },
+  {
+    "table_number": 2,
+    "orders": [
+      {
+        "dish": "삼겹살",
+        "quantity": 2,
+        "price": 10000
+      },
+      {
+        "dish": "라면",
+        "quantity": 1,
+        "price": 6000
+      },
+      {
+        "dish": "콘치즈",
+        "quantity": 1,
+        "price": 8000
+      }
+    ]
+  },
+  {
+    "table_number": 3,
+    "orders": [
+      {
+        "dish": "삼겹살",
+        "quantity": 1,
+        "price": 10000
+      },
+      {
+        "dish": "짬뽕탕",
+        "quantity": 1,
+        "price": 9000
+      },
+      {
+        "dish": "국밥",
+        "quantity": 2,
+        "price": 8500
+      },
+      {
+        "dish": "소주",
+        "quantity": 1,
+        "price": 7000
+      }
+    ]
+  },
+  {
+    "table_number": 4,
+    "orders": [
+      {
+        "dish": "라면",
+        "quantity": 1,
+        "price": 6000
+      },
+      {
+        "dish": "국밥",
+        "quantity": 2,
+        "price": 8500
+      }
+    ]
+  },
+  {
+    "table_number": 5,
+    "orders": [
+      {
+        "dish": "삼겹살",
+        "quantity": 1,
+        "price": 10000
+      },
+      {
+        "dish": "소주",
+        "quantity": 1,
+        "price": 7000
+      }
+    ]
+  },
+  {
+    "table_number": 6,
+    "orders": [
+      {
+        "dish": "삼겹살",
+        "quantity": 1,
+        "price": 10000
+      },
+      {
+        "dish": "짬뽕탕",
+        "quantity": 2,
+        "price": 9000
+      },
+      {
+        "dish": "국밥",
+        "quantity": 1,
+        "price": 8500
+      }
+    ]
+  },
+  {
+    "table_number": 7,
+    "orders": [
+      {
+        "dish": "짬뽕탕",
+        "quantity": 2,
+        "price": 9000
+      }
+    ]
+  },
+  {
+    "table_number": 8,
+    "orders": [
+      {
+        "dish": "삼겹살",
+        "quantity": 1,
+        "price": 10000
+      },
+      {
+        "dish": "국밥",
+        "quantity": 1,
+        "price": 8500
+      },
+      {
+        "dish": "소주",
+        "quantity": 1,
+        "price": 7000
+      }
+    ]
+  },
+  {
+    "table_number": 9,
+    "orders": [
+      {
+        "dish": "삼겹살",
+        "quantity": 1,
+        "price": 10000
+      },
+      {
+        "dish": "짬뽕탕",
+        "quantity": 1,
+        "price": 9000
+      },
+      {
+        "dish": "국밥",
+        "quantity": 1,
+        "price": 8500
+      }
+    ]
+  },
+  {
+    "table_number": 10,
+    "orders": [
+      {
+        "dish": "육개장",
+        "quantity": 1,
+        "price": 9500
+      },
+      {
+        "dish": "소주",
+        "quantity": 1,
+        "price": 7000
+      },
+      {
+        "dish": "콘치즈",
+        "quantity": 1,
+        "price": 8000
+      }
+    ]
+  },
+  {
+    "table_number": 11,
+    "orders": [
+      {
+        "dish": "라면",
+        "quantity": 1,
+        "price": 6000
+      },
+      {
+        "dish": "육개장",
+        "quantity": 1,
+        "price": 9500
+      },
+      {
+        "dish": "소주",
+        "quantity": 1,
+        "price": 7000
+      }
+    ]
+  },
+  {
+    "table_number": 12,
+    "orders": [
+      {
+        "dish": "삼겹살",
+        "quantity": 1,
+        "price": 10000
+      },
+      {
+        "dish": "소주",
+        "quantity": 2,
+        "price": 7000
+      },
+      {
+        "dish": "콘치즈",
+        "quantity": 1,
+        "price": 8000
+      }
+    ]
+  },
+  {
+    "table_number": 13,
+    "orders": [
+      {
+        "dish": "라면",
+        "quantity": 2,
+        "price": 6000
+      },
+      {
+        "dish": "육개장",
+        "quantity": 1,
+        "price": 9500
+      },
+      {
+        "dish": "국밥",
+        "quantity": 1,
+        "price": 8500
+      }
+    ]
+  },
+  {
+    "table_number": 14,
+    "orders": [
+      {
+        "dish": "국밥",
+        "quantity": 2,
+        "price": 8500
+      }
+    ]
+  },
+  {
+    "table_number": 15,
+    "orders": [
+      {
+        "dish": "소주",
+        "quantity": 1,
+        "price": 7000
+      },
+      {
+        "dish": "콘치즈",
+        "quantity": 1,
+        "price": 8000
+      },
+      {
+        "dish": "삼겹살",
+        "quantity": 1,
+        "price": 10000
+      },
+      {
+        "dish": "국밥",
+        "quantity": 1,
+        "price": 8500
+      },
+      {
+        "dish": "라면",
+        "quantity": 1,
+        "price": 6000
+      }
+    ]
+  },
+  {
+    "table_number": 16,
+    "orders": [
+      {
+        "dish": "소주",
+        "quantity": 1,
+        "price": 7000
+      },
+      {
+        "dish": "콘치즈",
+        "quantity": 1,
+        "price": 8000
+      },
+      {
+        "dish": "국밥",
+        "quantity": 1,
+        "price": 8500
+      },
+      {
+        "dish": "라면",
+        "quantity": 1,
+        "price": 6000
+      },
+      {
+        "dish": "육개장",
+        "quantity": 1,
+        "price": 9500
+      }
+    ]
+  }
+]
