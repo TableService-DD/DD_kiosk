@@ -12,11 +12,12 @@ export function Login() {
   useEffect(() => {
     const accessToken = localStorage.getItem('accessToken') || '';
     if (accessToken !== '') {
-      navigate('/login', { replace: true });
+      navigate('/', { replace: true });
     }
   }, [navigate]);
 
-  const loginHandler = async () => {
+  const loginHandler = async (event: any) => {
+    event.preventDefault();
     try {
       const user_id = id;
       const user_password = password;
@@ -25,13 +26,13 @@ export function Login() {
       if (result) {
         navigate('/', { replace: true });
       } else {
-        toast.error('사용자 인증에 실패하였습니다.', {
-          position: 'bottom-center',
+        toast.error('🦄 사용자 인증에 실패하였습니다.', {
+          position: 'top-center',
         });
       }
     } catch (e) {
-      toast.error('사용자 인증에 실패하였습니다.', {
-        position: 'bottom-center',
+      toast.error('🦄 사용자 인증에 실패하였습니다.', {
+        position: 'top-center',
       });
     }
   };
