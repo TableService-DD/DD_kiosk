@@ -1,4 +1,4 @@
-type ResponseData<T> = {
+export type ResponseData<T> = {
     message: string;
     data: T;
 };
