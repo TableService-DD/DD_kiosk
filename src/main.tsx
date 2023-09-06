@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+import { Login } from './pages/Login.tsx';
 import Home from './pages/Home.tsx';
 import ListPage from './pages/ListPage.tsx';
 import ListStatus from './pages/ListStatus.tsx';
@@ -41,8 +43,11 @@ const router = createBrowserRouter([
     path: '/sales',
     element: <Sales />,
   },
+  {
+    path: '/login',
+    element: <Login />,
+  }
 ]);
-
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <RouterProvider router={router} />
