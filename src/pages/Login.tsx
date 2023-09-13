@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { LoginHandler } from '../handler/apihandler';
 import { useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
@@ -6,9 +6,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 export function Login() {
   const navigate = useNavigate();
-  const [id, setId] = React.useState('');
-  const [password, setPassword] = React.useState('');
-
+  const [id, setId] = useState('');
+  const [password, setPassword] = useState('');
   useEffect(() => {
     const accessToken = localStorage.getItem('accessToken') || '';
     if (accessToken !== '') {
