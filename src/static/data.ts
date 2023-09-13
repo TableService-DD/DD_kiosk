@@ -19,3 +19,5 @@ export type InfoBannerItem = {
   imgSrc: string;
   imgAlt: string;
 };
+
+export const STORE_CODE = '2B5YG1OHDU9SZTJM7WCXQLEV';

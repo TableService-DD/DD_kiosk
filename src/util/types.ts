@@ -40,3 +40,13 @@ export type Table = {
 };
 
 export type Tables = Table[];
+
+export interface CartItem {
+  user_id: string;
+  table_number: string;
+  product_id: string;
+  product_price: number;
+  product_count: number;
+  product_option: { [key: string]: number } | null;
+  product_image: string[];
+}
